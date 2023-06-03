@@ -13,3 +13,5 @@ ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@193.108.118.79:2375#%F0%9F%87%A9%F0%9F
 trojan://208f229c-e92a-4de1-a34d-c22c553a1d35@217.79.184.18:443/?type=tcp&security=tls&sni=download.xn--mes358a9urctx.com&fp=firefox#%F0%9F%87%A9%F0%9F%87%AAGerman%20%7C%20isegaro
 
 vless://e073a71e-f755-4ea6-efa4-621affd7e7b2@fox.pouyaa.xyz:19420/?encryption=none&host=%2Fvarzesh3.com&type=tcp&headerType=http#VPN-P
+
+vmess://eyJhZGQiOiI0NS42My4xMTkuNDIiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiM2QwYzhlZTUtMzMyOS00MjUyLWFhMWMtNjVmM2ZkYWEwMzQzIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiI4NDQzIiwicHMiOiLlvrflm71fMDYwMjAxMCIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
