@@ -30,7 +30,7 @@ proxies:
   - {"name":"🇩🇪German+|+isegaro","type":"trojan","server":"217.79.184.18","port":443,"udp":true,"password":"208f229c-e92a-4de1-a34d-c22c553a1d35","sni":"download.xn--mes358a9urctx.com","skip-cert-verify":true,"network":"tcp"}
   - {"name":"VPN-P","type":"vless","server":"128.140.80.14","port":19420,"uuid":"e073a71e-f755-4ea6-efa4-621affd7e7b2","tls":false,"servername":"/varzesh3.com","network":"tcp"}
 proxy-groups:
-  - name: 🚀 节点选择
+  - name: 🚀 انتخاب سرور 
     type: select
     proxies:
       - ♻️ 自动选择
