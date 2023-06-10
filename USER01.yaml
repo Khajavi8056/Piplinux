@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：10-06-2023 13:27:35
+# 创建时间：10-06-2023 18:56:03
 # 使用模版：V2RaySE 默认模版
-# 节点数量：7
+# 节点数量：8
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -29,6 +29,7 @@ proxies:
   - {"name":"新加坡_0606834","type":"trojan","server":"jp.stablize.top","port":443,"udp":true,"password":"b8c227b5-d026-4379-828e-0e230d53a7a1","skip-cert-verify":true,"network":"tcp"}
   - {"name":"Irancell+1","type":"vless","server":"51.38.145.47","port":8443,"udp":true,"uuid":"651d636e-0dbe-45dd-cb97-fb0da7d5a6ee","tls":true,"servername":"ftp.debian.org","network":"tcp","reality-opts":{"public-key":"WGAiYSOSm4HKMKYDc6YSS86ychzh-rEdoqB8NZRvzyY","short-id":"91f6619a"},"client-fingerprint":"firefox"}
   - {"name":"✅+mo","type":"vless","server":"5.75.228.8","port":8443,"udp":true,"uuid":"Telegram-Helix-Servers","tls":true,"servername":"cdn.accuweather.com","network":"grpc","reality-opts":{"public-key":"zGPZjTIxrUrKR5HXMvdJ06ofoPC1_L-yOuTos8NTS0c","short-id":"87569c63"},"client-fingerprint":"firefox"}
+  - {"name":"۹.۲@+✅","type":"trojan","server":"nl1.chuqiangtou.net","port":4003,"udp":true,"password":"TJCfE7Mx2YcA8kX8zg","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -42,6 +43,7 @@ proxy-groups:
       - 新加坡_0606834
       - Irancell+1
       - ✅+mo
+      - ۹.۲@+✅
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -55,6 +57,7 @@ proxy-groups:
       - 新加坡_0606834
       - Irancell+1
       - ✅+mo
+      - ۹.۲@+✅
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -68,6 +71,7 @@ proxy-groups:
       - 新加坡_0606834
       - Irancell+1
       - ✅+mo
+      - ۹.۲@+✅
   - name: 📲 电报信息
     type: select
     proxies:
@@ -80,6 +84,7 @@ proxy-groups:
       - 新加坡_0606834
       - Irancell+1
       - ✅+mo
+      - ۹.۲@+✅
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -92,6 +97,7 @@ proxy-groups:
       - 新加坡_0606834
       - Irancell+1
       - ✅+mo
+      - ۹.۲@+✅
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -104,6 +110,7 @@ proxy-groups:
       - 新加坡_0606834
       - Irancell+1
       - ✅+mo
+      - ۹.۲@+✅
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -133,6 +140,7 @@ proxy-groups:
       - 新加坡_0606834
       - Irancell+1
       - ✅+mo
+      - ۹.۲@+✅
 
 rules:
 # 本地/局域网地址
