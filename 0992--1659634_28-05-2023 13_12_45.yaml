@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：10-06-2023 19:03:09
+# 创建时间：10-06-2023 20:28:45
 # 使用模版：V2RaySE 默认模版
-# 节点数量：9
+# 节点数量：7
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -22,102 +22,88 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"美国_06064704","type":"vmess","server":"ns1.v2-vip.fun","port":80,"cipher":"chacha20-poly1305","uuid":"a6457d28-e328-4202-99fe-0606d7ad69a9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/6rXqecLmchrWkX7cy1ilLjMBLUC","headers":{"host":"de18.irteh.fun"}}}
-  - {"name":"irancell 02","type":"vmess","server":"ns1.v2-vip.fun","port":80,"cipher":"chacha20-poly1305","uuid":"4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ozX9aUPiJVtoLavjTW","headers":{"host":"de14.irteh.fun"}}}
-  - {"name":"法国_0606014","type":"vmess","server":"91.134.246.59","port":48028,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"英国_0606014","type":"vmess","server":"51.89.74.241","port":51102,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"新加坡_0606834","type":"trojan","server":"jp.stablize.top","port":443,"udp":true,"password":"b8c227b5-d026-4379-828e-0e230d53a7a1","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"Irancell+1","type":"vless","server":"51.38.145.47","port":8443,"udp":true,"uuid":"651d636e-0dbe-45dd-cb97-fb0da7d5a6ee","tls":true,"servername":"ftp.debian.org","network":"tcp","reality-opts":{"public-key":"WGAiYSOSm4HKMKYDc6YSS86ychzh-rEdoqB8NZRvzyY","short-id":"91f6619a"},"client-fingerprint":"firefox"}
+  - {"name":"英国_0606014","type":"vmess","server":"51.89.74.241","port":51102,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"✅+mo","type":"vless","server":"5.75.228.8","port":8443,"udp":true,"uuid":"Telegram-Helix-Servers","tls":true,"servername":"cdn.accuweather.com","network":"grpc","reality-opts":{"public-key":"zGPZjTIxrUrKR5HXMvdJ06ofoPC1_L-yOuTos8NTS0c","short-id":"87569c63"},"client-fingerprint":"firefox"}
+  - {"name":"p3","type":"vless","server":"ashcan.aurorainiceland.com","port":443,"uuid":"9c9f7230-c8ff-44d2-93f2-a1febbc23767","tls":true,"servername":"ashcan.aurorainiceland.com","network":"ws","ws-opts":{"path":"/nimws","headers":{"host":"ashcan.aurorainiceland.com"}}}
+  - {"name":"p2","type":"vless","server":"ashcan.aurorainiceland.com","port":443,"uuid":"9c9f7230-c8ff-44d2-93f2-a1febbc23767","tls":true,"servername":"ashcan.aurorainiceland.com","network":"ws","ws-opts":{"path":"/nimws"}}
+  - {"name":"VPN-P","type":"vless","server":"fox.pouyaa.xyz","port":19420,"uuid":"e073a71e-f755-4ea6-efa4-621affd7e7b2","tls":false,"servername":"/varzesh3.com","network":"tcp"}
+  - {"name":"法国_0606014","type":"vmess","server":"91.134.246.59","port":48028,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"۹.۲@+✅","type":"trojan","server":"nl1.chuqiangtou.net","port":4003,"udp":true,"password":"TJCfE7Mx2YcA8kX8zg","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"13.1TJCfE7Mx2YcA8kX8zg@nl1.chuqiangtou.net","type":"trojan","server":"nl1.chuqiangtou.net","port":4003,"udp":true,"password":"TJCfE7Mx2YcA8kX8zg","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 美国_06064704
-      - irancell 02
-      - 法国_0606014
       - 英国_0606014
-      - 新加坡_0606834
-      - Irancell+1
       - ✅+mo
+      - p3
+      - p2
+      - VPN-P
+      - 法国_0606014
       - ۹.۲@+✅
-      - 13.1TJCfE7Mx2YcA8kX8zg@nl1.chuqiangtou.net
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美国_06064704
-      - irancell 02
-      - 法国_0606014
       - 英国_0606014
-      - 新加坡_0606834
-      - Irancell+1
       - ✅+mo
+      - p3
+      - p2
+      - VPN-P
+      - 法国_0606014
       - ۹.۲@+✅
-      - 13.1TJCfE7Mx2YcA8kX8zg@nl1.chuqiangtou.net
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 美国_06064704
-      - irancell 02
-      - 法国_0606014
       - 英国_0606014
-      - 新加坡_0606834
-      - Irancell+1
       - ✅+mo
+      - p3
+      - p2
+      - VPN-P
+      - 法国_0606014
       - ۹.۲@+✅
-      - 13.1TJCfE7Mx2YcA8kX8zg@nl1.chuqiangtou.net
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国_06064704
-      - irancell 02
-      - 法国_0606014
       - 英国_0606014
-      - 新加坡_0606834
-      - Irancell+1
       - ✅+mo
+      - p3
+      - p2
+      - VPN-P
+      - 法国_0606014
       - ۹.۲@+✅
-      - 13.1TJCfE7Mx2YcA8kX8zg@nl1.chuqiangtou.net
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 美国_06064704
-      - irancell 02
-      - 法国_0606014
       - 英国_0606014
-      - 新加坡_0606834
-      - Irancell+1
       - ✅+mo
+      - p3
+      - p2
+      - VPN-P
+      - 法国_0606014
       - ۹.۲@+✅
-      - 13.1TJCfE7Mx2YcA8kX8zg@nl1.chuqiangtou.net
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 美国_06064704
-      - irancell 02
-      - 法国_0606014
       - 英国_0606014
-      - 新加坡_0606834
-      - Irancell+1
       - ✅+mo
+      - p3
+      - p2
+      - VPN-P
+      - 法国_0606014
       - ۹.۲@+✅
-      - 13.1TJCfE7Mx2YcA8kX8zg@nl1.chuqiangtou.net
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -140,15 +126,13 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美国_06064704
-      - irancell 02
-      - 法国_0606014
       - 英国_0606014
-      - 新加坡_0606834
-      - Irancell+1
       - ✅+mo
+      - p3
+      - p2
+      - VPN-P
+      - 法国_0606014
       - ۹.۲@+✅
-      - 13.1TJCfE7Mx2YcA8kX8zg@nl1.chuqiangtou.net
 
 rules:
 # 本地/局域网地址
