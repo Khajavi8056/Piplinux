@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：04-06-2023 09:31:56
+# 创建时间：10-06-2023 12:10:38
 # 使用模版：V2RaySE 默认模版
-# 节点数量：7
+# 节点数量：6
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -22,88 +22,81 @@ dns:
     - tls://dns.google:853
 
 proxies:
+  - {"name":"美国_06064704","type":"vmess","server":"ns1.v2-vip.fun","port":80,"cipher":"chacha20-poly1305","uuid":"a6457d28-e328-4202-99fe-0606d7ad69a9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/6rXqecLmchrWkX7cy1ilLjMBLUC","headers":{"host":"de18.irteh.fun"}}}
+  - {"name":"irancell 02","type":"vmess","server":"ns1.v2-vip.fun","port":80,"cipher":"chacha20-poly1305","uuid":"4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/ozX9aUPiJVtoLavjTW","headers":{"host":"de14.irteh.fun"}}}
+  - {"name":"法国_0606014","type":"vmess","server":"91.134.246.59","port":48028,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"英国_0606014","type":"vmess","server":"51.89.74.241","port":51102,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"新加坡_0606834","type":"trojan","server":"jp.stablize.top","port":443,"udp":true,"password":"b8c227b5-d026-4379-828e-0e230d53a7a1","skip-cert-verify":true,"network":"tcp"}
   - {"name":"Irancell+1","type":"vless","server":"51.38.145.47","port":8443,"udp":true,"uuid":"651d636e-0dbe-45dd-cb97-fb0da7d5a6ee","tls":true,"servername":"ftp.debian.org","network":"tcp","reality-opts":{"public-key":"WGAiYSOSm4HKMKYDc6YSS86ychzh-rEdoqB8NZRvzyY","short-id":"91f6619a"},"client-fingerprint":"firefox"}
-  - {"name":"🇬🇧GB-ایرانسل","type":"vmess","server":"178.239.171.103","port":80,"cipher":"auto","uuid":"61280f80-cd25-4c7b-8e5a-b1560617047a","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/T5t5p1DPeSIooUZfEmkFAYfTxZ"}}
-  - {"name":"🇭🇷HR-46همراه+اول","type":"ss","server":"46.183.184.61","port":989,"password":"f8f7aCzcPKbsF8p3","cipher":"aes-256-cfb"}
-  - {"name":"git","type":"trojan","server":"20.212.80.209","port":443,"udp":true,"password":"7864a4da-bfaf-4eea-bc1d-b7c829483df1","sni":"sg.stablize.top","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇩🇪DE-ویژه+مخابرات+اینترنت+ثابت","type":"ss","server":"193.108.118.79","port":2375,"password":"faBAoD54k87UJG7","cipher":"aes-256-gcm"}
-  - {"name":"🇩🇪German+|+isegaro","type":"trojan","server":"217.79.184.18","port":443,"udp":true,"password":"208f229c-e92a-4de1-a34d-c22c553a1d35","sni":"download.xn--mes358a9urctx.com","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"VPN-P","type":"vless","server":"128.140.80.14","port":19420,"uuid":"e073a71e-f755-4ea6-efa4-621affd7e7b2","tls":false,"servername":"/varzesh3.com","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
-      - 🇬🇧GB-ایرانسل
-      - 🇭🇷HR-46همراه+اول
-      - git
-      - 🇩🇪DE-ویژه+مخابرات+اینترنت+ثابت
-      - 🇩🇪German+|+isegaro
-      - VPN-P
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
-      - 🇬🇧GB-ایرانسل
-      - 🇭🇷HR-46همراه+اول
-      - git
-      - 🇩🇪DE-ویژه+مخابرات+اینترنت+ثابت
-      - 🇩🇪German+|+isegaro
-      - VPN-P
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
-      - 🇬🇧GB-ایرانسل
-      - 🇭🇷HR-46همراه+اول
-      - git
-      - 🇩🇪DE-ویژه+مخابرات+اینترنت+ثابت
-      - 🇩🇪German+|+isegaro
-      - VPN-P
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
-      - 🇬🇧GB-ایرانسل
-      - 🇭🇷HR-46همراه+اول
-      - git
-      - 🇩🇪DE-ویژه+مخابرات+اینترنت+ثابت
-      - 🇩🇪German+|+isegaro
-      - VPN-P
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
-      - 🇬🇧GB-ایرانسل
-      - 🇭🇷HR-46همراه+اول
-      - git
-      - 🇩🇪DE-ویژه+مخابرات+اینترنت+ثابت
-      - 🇩🇪German+|+isegaro
-      - VPN-P
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
-      - 🇬🇧GB-ایرانسل
-      - 🇭🇷HR-46همراه+اول
-      - git
-      - 🇩🇪DE-ویژه+مخابرات+اینترنت+ثابت
-      - 🇩🇪German+|+isegaro
-      - VPN-P
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -126,13 +119,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
-      - 🇬🇧GB-ایرانسل
-      - 🇭🇷HR-46همراه+اول
-      - git
-      - 🇩🇪DE-ویژه+مخابرات+اینترنت+ثابت
-      - 🇩🇪German+|+isegaro
-      - VPN-P
 
 rules:
 # 本地/局域网地址
