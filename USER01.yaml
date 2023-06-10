@@ -1,7 +1,7 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：10-06-2023 20:28:45
+# 创建时间：10-06-2023 20:36:00
 # 使用模版：V2RaySE 默认模版
 # 节点数量：7
 ####################################
@@ -22,12 +22,12 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"英国_0606014","type":"vmess","server":"51.89.74.241","port":51102,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"英国_0606014","type":"vmess","server":"51.89.74.241","port":51102,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"✅+mo","type":"vless","server":"5.75.228.8","port":8443,"udp":true,"uuid":"Telegram-Helix-Servers","tls":true,"servername":"cdn.accuweather.com","network":"grpc","reality-opts":{"public-key":"zGPZjTIxrUrKR5HXMvdJ06ofoPC1_L-yOuTos8NTS0c","short-id":"87569c63"},"client-fingerprint":"firefox"}
-  - {"name":"p3","type":"vless","server":"ashcan.aurorainiceland.com","port":443,"uuid":"9c9f7230-c8ff-44d2-93f2-a1febbc23767","tls":true,"servername":"ashcan.aurorainiceland.com","network":"ws","ws-opts":{"path":"/nimws","headers":{"host":"ashcan.aurorainiceland.com"}}}
+  - {"name":"p3","type":"vless","server":"ashcan.aurorainiceland.com","port":443,"uuid":"9c9f7230-c8ff-44d2-93f2-a1febbc23767","tls":true,"servername":"ashcan.aurorainiceland.com","network":"ws","ws-opts":{"path":"/nimws"}}
   - {"name":"p2","type":"vless","server":"ashcan.aurorainiceland.com","port":443,"uuid":"9c9f7230-c8ff-44d2-93f2-a1febbc23767","tls":true,"servername":"ashcan.aurorainiceland.com","network":"ws","ws-opts":{"path":"/nimws"}}
   - {"name":"VPN-P","type":"vless","server":"fox.pouyaa.xyz","port":19420,"uuid":"e073a71e-f755-4ea6-efa4-621affd7e7b2","tls":false,"servername":"/varzesh3.com","network":"tcp"}
-  - {"name":"法国_0606014","type":"vmess","server":"91.134.246.59","port":48028,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"法国_0606014","type":"vmess","server":"91.134.246.59","port":48028,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"۹.۲@+✅","type":"trojan","server":"nl1.chuqiangtou.net","port":4003,"udp":true,"password":"TJCfE7Mx2YcA8kX8zg","skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
