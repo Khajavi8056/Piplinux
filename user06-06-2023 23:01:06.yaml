@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：06-06-2023 23:00:56
+# 创建时间：10-06-2023 12:10:38
 # 使用模版：V2RaySE 默认模版
-# 节点数量：2
+# 节点数量：6
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -22,7 +22,11 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"✅ سرور شماره 1","type":"vmess","server":"::ffff:05a1:155e","port":443,"cipher":"aes-128-gcm","uuid":"45283f92-3994-4625-e9ca-7166501b9d4c","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"美国_06064704","type":"vmess","server":"ns1.v2-vip.fun","port":80,"cipher":"chacha20-poly1305","uuid":"a6457d28-e328-4202-99fe-0606d7ad69a9","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/6rXqecLmchrWkX7cy1ilLjMBLUC","headers":{"host":"de18.irteh.fun"}}}
+  - {"name":"irancell 02","type":"vmess","server":"ns1.v2-vip.fun","port":80,"cipher":"chacha20-poly1305","uuid":"4f859149-2b2f-4b90-9a2c-8c0fe15c8c4c","alterId":0,"tls":false,"skip-cert-verify":true,"servername":"","network":"ws","ws-opts":{"path":"/ozX9aUPiJVtoLavjTW","headers":{"host":"de14.irteh.fun"}}}
+  - {"name":"法国_0606014","type":"vmess","server":"91.134.246.59","port":48028,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"英国_0606014","type":"vmess","server":"51.89.74.241","port":51102,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"新加坡_0606834","type":"trojan","server":"jp.stablize.top","port":443,"udp":true,"password":"b8c227b5-d026-4379-828e-0e230d53a7a1","skip-cert-verify":true,"network":"tcp"}
   - {"name":"Irancell+1","type":"vless","server":"51.38.145.47","port":8443,"udp":true,"uuid":"651d636e-0dbe-45dd-cb97-fb0da7d5a6ee","tls":true,"servername":"ftp.debian.org","network":"tcp","reality-opts":{"public-key":"WGAiYSOSm4HKMKYDc6YSS86ychzh-rEdoqB8NZRvzyY","short-id":"91f6619a"},"client-fingerprint":"firefox"}
 proxy-groups:
   - name: 🚀 节点选择
@@ -30,7 +34,11 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ✅ سرور شماره 1
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
   - name: ♻️ 自动选择
     type: url-test
@@ -38,7 +46,11 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - ✅ سرور شماره 1
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
   - name: 🌍 国外媒体
     type: select
@@ -46,28 +58,44 @@ proxy-groups:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - ✅ سرور شماره 1
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ✅ سرور شماره 1
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - ✅ سرور شماره 1
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - ✅ سرور شماره 1
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
   - name: 🎯 全球直连
     type: select
@@ -91,7 +119,11 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ✅ سرور شماره 1
+      - 美国_06064704
+      - irancell 02
+      - 法国_0606014
+      - 英国_0606014
+      - 新加坡_0606834
       - Irancell+1
 
 rules:
