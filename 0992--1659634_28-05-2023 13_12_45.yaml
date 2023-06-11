@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：11-06-2023 15:18:07
+# 创建时间：11-06-2023 20:21:28
 # 使用模版：V2RaySE 默认模版
-# 节点数量：7
+# 节点数量：8
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -29,6 +29,7 @@ proxies:
   - {"name":"法国_0606014","type":"vmess","server":"91.134.246.59","port":48028,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
   - {"name":"۹.۲@+✅","type":"trojan","server":"nl1.chuqiangtou.net","port":4003,"udp":true,"password":"TJCfE7Mx2YcA8kX8zg","skip-cert-verify":true,"network":"tcp"}
   - {"name":"همراه+اول","type":"vless","server":"104.31.16.11","port":80,"uuid":"a1acd85e-857f-4b89-9a5f-4ad83a35ef86","tls":false,"servername":"forum.maroonagate.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"forum.maroonagate.com"}}}
+  - {"name":"VPN-Germany","type":"vless","server":"ave.pouyaa.xyz","port":19420,"uuid":"583cafde-3faa-46cd-ab78-2ed74f101056","tls":false,"servername":"/varzesh3.com","network":"tcp"}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -42,6 +43,7 @@ proxy-groups:
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
+      - VPN-Germany
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -55,6 +57,7 @@ proxy-groups:
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
+      - VPN-Germany
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -68,6 +71,7 @@ proxy-groups:
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
+      - VPN-Germany
   - name: 📲 电报信息
     type: select
     proxies:
@@ -80,6 +84,7 @@ proxy-groups:
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
+      - VPN-Germany
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
@@ -92,6 +97,7 @@ proxy-groups:
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
+      - VPN-Germany
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -104,6 +110,7 @@ proxy-groups:
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
+      - VPN-Germany
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -133,6 +140,7 @@ proxy-groups:
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
+      - VPN-Germany
 
 rules:
 # 本地/局域网地址
