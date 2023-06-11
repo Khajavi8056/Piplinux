@@ -1,9 +1,9 @@
 ####################################
 # 创建者：v2rayse.com
 # 客户端：Clash.Meta
-# 创建时间：11-06-2023 20:21:28
+# 创建时间：11-06-2023 20:35:41
 # 使用模版：V2RaySE 默认模版
-# 节点数量：8
+# 节点数量：10
 ####################################
 # !!当前配置文件请使用基于 Clash.Meta 内核程序
 mixed-port: 7890
@@ -22,95 +22,109 @@ dns:
     - tls://dns.google:853
 
 proxies:
-  - {"name":"英国_0606014","type":"vmess","server":"51.89.74.241","port":51102,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
-  - {"name":"p3","type":"vless","server":"ashcan.aurorainiceland.com","port":443,"uuid":"9c9f7230-c8ff-44d2-93f2-a1febbc23767","tls":true,"servername":"ashcan.aurorainiceland.com","network":"ws","ws-opts":{"path":"/nimws","headers":{"host":"ashcan.aurorainiceland.com"}}}
+  - {"name":"✅","type":"vless","server":"mc.kiava.fun","port":443,"udp":true,"uuid":"9915fa3b-f228-46a2-ab4f-5a67a12aa5db","tls":true,"servername":"www.speedtest.net","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"ZupmU0Um3S4mdzBkGMFjBa76n_h1i6P6i3LMYk5Iex0"},"client-fingerprint":"chrome"}
+  - {"name":"1✅","type":"vless","server":"eset.kiava.fun","port":443,"udp":true,"uuid":"9915fa3b-f228-46a2-ab4f-5a67a12aa5db","tls":true,"servername":"eset.com","flow":"xtls-rprx-vision","network":"tcp","reality-opts":{"public-key":"Qb8zVntvGjGsZtGIHgngUCsgmSNRJVJcKiLuXWIjeQ4"},"client-fingerprint":"chrome"}
+  - {"name":"2✅","type":"vless","server":"5.75.228.8","port":2087,"udp":true,"uuid":"Telegram-Helix-Servers","tls":true,"servername":"Ponisha.ir","network":"http","reality-opts":{"public-key":"PgUPlz4p3g_IRT-aDH_Smb3Nt7LpsvQcAVIKm3n17Gw","short-id":"fd401c81"},"client-fingerprint":"firefox"}
+  - {"name":"3✅","type":"vmess","server":"185.249.227.220","port":42653,"cipher":"auto","uuid":"a2d2f285-3650-47fa-9d83-9a259d52abd9","alterId":0,"tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/?ed=2048"}}
+  - {"name":"p3","type":"vless","server":"ashcan.aurorainiceland.com","port":443,"uuid":"9c9f7230-c8ff-44d2-93f2-a1febbc23767","tls":true,"servername":"ashcan.aurorainiceland.com","network":"ws","ws-opts":{"path":"/nimws"}}
   - {"name":"p2","type":"vless","server":"ashcan.aurorainiceland.com","port":443,"uuid":"9c9f7230-c8ff-44d2-93f2-a1febbc23767","tls":true,"servername":"ashcan.aurorainiceland.com","network":"ws","ws-opts":{"path":"/nimws"}}
   - {"name":"VPN-P","type":"vless","server":"fox.pouyaa.xyz","port":19420,"uuid":"e073a71e-f755-4ea6-efa4-621affd7e7b2","tls":false,"servername":"/56.varzesh3.com","network":"tcp"}
-  - {"name":"法国_0606014","type":"vmess","server":"91.134.246.59","port":48028,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"servername":"","network":"tcp"}
+  - {"name":"法国_0606014","type":"vmess","server":"91.134.246.59","port":48028,"cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":64,"tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"۹.۲@+✅","type":"trojan","server":"nl1.chuqiangtou.net","port":4003,"udp":true,"password":"TJCfE7Mx2YcA8kX8zg","skip-cert-verify":true,"network":"tcp"}
-  - {"name":"همراه+اول","type":"vless","server":"104.31.16.11","port":80,"uuid":"a1acd85e-857f-4b89-9a5f-4ad83a35ef86","tls":false,"servername":"forum.maroonagate.com","network":"ws","ws-opts":{"path":"/","headers":{"host":"forum.maroonagate.com"}}}
-  - {"name":"VPN-Germany","type":"vless","server":"ave.pouyaa.xyz","port":19420,"uuid":"583cafde-3faa-46cd-ab78-2ed74f101056","tls":false,"servername":"/varzesh3.com","network":"tcp"}
+  - {"name":"همراه+اول","type":"vless","server":"104.31.16.11","port":80,"uuid":"a1acd85e-857f-4b89-9a5f-4ad83a35ef86","tls":false,"servername":"forum.maroonagate.com","network":"ws","ws-opts":{"path":"/"}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 英国_0606014
+      - ✅
+      - 1✅
+      - 2✅
+      - 3✅
       - p3
       - p2
       - VPN-P
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
-      - VPN-Germany
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 英国_0606014
+      - ✅
+      - 1✅
+      - 2✅
+      - 3✅
       - p3
       - p2
       - VPN-P
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
-      - VPN-Germany
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 英国_0606014
+      - ✅
+      - 1✅
+      - 2✅
+      - 3✅
       - p3
       - p2
       - VPN-P
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
-      - VPN-Germany
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 英国_0606014
+      - ✅
+      - 1✅
+      - 2✅
+      - 3✅
       - p3
       - p2
       - VPN-P
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
-      - VPN-Germany
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 英国_0606014
+      - ✅
+      - 1✅
+      - 2✅
+      - 3✅
       - p3
       - p2
       - VPN-P
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
-      - VPN-Germany
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 英国_0606014
+      - ✅
+      - 1✅
+      - 2✅
+      - 3✅
       - p3
       - p2
       - VPN-P
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
-      - VPN-Germany
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -133,14 +147,16 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 英国_0606014
+      - ✅
+      - 1✅
+      - 2✅
+      - 3✅
       - p3
       - p2
       - VPN-P
       - 法国_0606014
       - ۹.۲@+✅
       - همراه+اول
-      - VPN-Germany
 
 rules:
 # 本地/局域网地址
