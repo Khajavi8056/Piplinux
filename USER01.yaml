@@ -7,4 +7,4 @@ vless://Telegram-Helix-Servers@49.13.31.77:8443?mode=gun&security=reality&encryp
 vmess://eyJhZGQiOiIyMDkuMjUwLjIzOC4zMCIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJkMmZlNzhjOS0yZmM4LTQxMzQtYTk4NC0xMmU4ODRiYjA3MmQiLCJuZXQiOiJncnBjIiwicGF0aCI6IiIsInBvcnQiOiIyMDg3IiwicHMiOiJzZXJ2ZXIgMDUiLCJzY3kiOiJhdXRvIiwic25pIjoiR2VybWFueXR3by5hbWlyY29udGVuZGVyLnNpdGUiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiZ3VuIiwidiI6IjIifQ==
 vless://TheHotVPN@speedtest.wlftest.xyz:443?security=reality&encryption=none&pbk=NT3ozRtEyDjNV_2rUXFAf65Uf52OfdKANpePb3eZQAA&headerType=none&fp=ios&type=tcp&sni=www.speedtest.net&sid=ce#server07
 ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6TlpldzNacm1aanh1bGxzem1BS3RmdStwWmgwRjFkeG5JUGN3bGFTdGp5ST0=@88.135.44.117:443?plugin=shadow-tls;mux=undefined;host=www.datadoghq.com#ShadowTLS%20v3
-vless://c066fd21-9878-4d2b-8d36-f6188edbb5e9@ge13.xn--ygb2bf00b3a8o.com:11052?security=none&path=%2F&host=divarcdn.com&headerType=http&type=tcp#AKBg4v+%D8%A2%D9%84%D9%85%D8%A7%D9%86+13
+vless://c066fd21-9878-4d2b-8d36-f6188edbb5e9@tr1.xn--ygb2bf00b3a8o.com:14077?security=none&path=%2F&host=divarcdn.com&headerType=http&type=tcp#AKBg4v+%D8%AA%D8%B1%DA%A9%DB%8C%D9%87+1
