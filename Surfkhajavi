@@ -1,0 +1,16 @@
+
+[General]
+dns-server = system, 108.137.44.39, 108.137.44.9, puredns.org:853
+
+[Proxy]
+🇳🇱NL-  = vmess, 45.155.249.17, 80, username=9fd713f3-0896-4d67-8a97-038b388ee017, tls=false, ws=true, ws-path=/, sni=45.155.249.17, ws-headers=Host:45.155.249.17, skip-cert-verify=1, tfo=true, udp-relay=true
+2 94 = trojan, discord.com, 443, password=22dxmxezsm, skip-cert-verify=true, sni=?type=grpc&serviceName=Amsterdam&security=tls&sni=brec3xLN7Zl2.pouriya.cf&fp=chrome#2, udp-relay=true
+香港2 = vmess, icook.hk, 8080, username=499f999c-c5e9-464c-a90e-e331ee9f10e0, tls=false, ws=true, ws-path=/v?ed=2048, sni=hk.tashancloud.link, ws-headers=Host:hk.tashancloud.link, skip-cert-verify=1, tfo=true, udp-relay=true
+香港 98 = vmess, www.visa.com, 8080, username=499f999c-c5e9-464c-a90e-e331ee9f10e0, tls=false, ws=true, ws-path=/v?ed=2048, sni=hk.tashancloud.link, ws-headers=Host:hk.tashancloud.link, skip-cert-verify=1, tfo=true, udp-relay=true
+🚸101 = vmess, 142.4.125.84, 59614, username=418048af-a293-4b99-9b0c-98ca3580dd24, tls=false, ws=false, ws-path=, sni=, ws-headers=Host:, skip-cert-verify=1, tfo=true, udp-relay=true
+ MCI | 428 = trojan, 108.61.171.167, 443, password=mainssh-niwrhf87, skip-cert-verify=true, sni=?type=tcp&security=tls&sni=getgrpc.mainssh.xyz&allowInsecure=1#%F0%9F%9A%B8%20MCI%20%7C%20%28428%29, udp-relay=true
+
+[Proxy Group]
+SelectGroup = select,🇳🇱NL- ,2 94,香港2,香港 98,🚸101, MCI | 428
+[Rule]
+FINAL,SelectGroup
